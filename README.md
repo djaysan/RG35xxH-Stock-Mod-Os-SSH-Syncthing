@@ -22,47 +22,68 @@ I will lay it down here for the sake of it - if you are not confirtable with the
 **In this example my IP is 192.168.8.186** (yours will be different!) :
 
 1. First, type:
-**ssh root@192.168.8.186 **
+
+**ssh root@192.168.8.186**
+
 Press enter
 
 2. It will ask for your password which is **root**
 Press enter
 
 3. Then type:
+
 **apt-get install curl**
+
 Press enter
 
 4. Then type:
+
 **curl -s https://syncthing.net/release-key.txt | apt-key add -**
+
 Press enter
 
 5. Then Type:
+
 **echo "deb https://apt.syncthing.net/ syncthing stable" | tee /etc/apt/sources.list.d/syncthing.list**
+
 Press enter
 
 6. Then Type:
+
 **7. apt-get install apt-transport-https**
+
 Press enter
 
 8. Then Type:
+
 **apt-get update**
+
 Press enter
 
 9. Then Type:
-apt-get install syncthing
+
+**apt-get install syncthing**
+
 Press enter
 
 10. Then Type:
-systemctl enable syncthing@root.service
-Press enter
 
-11. Then Type:
-systemctl start syncthing@root.service
+**systemctl enable syncthing@root.service**
+
 Press enter
 
 12. Then Type:
-systemctl status syncthing@root.service
+
+**systemctl start syncthing@root.service**
+
 Press enter
+
+13. Then Type:
+
+**systemctl status syncthing@root.service**
+
+Press enter
+
 
 Once you have confirmed your service is working you need to allow external access to Syncthings webUI.
 By default it's locked to localhost. 
