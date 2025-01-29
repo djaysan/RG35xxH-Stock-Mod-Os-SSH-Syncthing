@@ -21,68 +21,68 @@ https://www.linuxbabe.com/ubuntu/install-syncthing-ubuntu-desktop-server
 I will lay it down here for the sake of it - if you are not confirtable with the terminal app don't worry and just follow these 12 steps!
 **In this example my IP is 192.168.8.186** (yours will be different!) :
 
-1. First, type:
+1- First, type:
 
 **ssh root@192.168.8.186**
 
-Press enter
+_Press enter_
 
-2. It will ask for your password which is **root**
-Press enter
+2- It will ask for your password which is **root**
 
-3. Then type:
+_Press enter_
+3- Then type:
 
 **apt-get install curl**
 
-Press enter
+_Press enter_
 
-4. Then type:
+4- Then type:
 
 **curl -s https://syncthing.net/release-key.txt | apt-key add -**
 
-Press enter
+_Press enter_
 
-5. Then Type:
+5- Then Type:
 
 **echo "deb https://apt.syncthing.net/ syncthing stable" | tee /etc/apt/sources.list.d/syncthing.list**
 
-Press enter
+_Press enter_
 
-6. Then Type:
+6- Then Type:
 
 **7. apt-get install apt-transport-https**
 
-Press enter
+_Press enter_
 
-8. Then Type:
+8- Then Type:
 
 **apt-get update**
 
-Press enter
+_Press enter_
 
-9. Then Type:
+9- Then Type:
 
 **apt-get install syncthing**
 
-Press enter
+_Press enter_
 
-10. Then Type:
+10- Then Type:
 
 **systemctl enable syncthing@root.service**
 
-Press enter
+_Press enter_
 
-12. Then Type:
+12- Then Type:
 
 **systemctl start syncthing@root.service**
 
-Press enter
+_Press enter_
 
-13. Then Type:
+13- Then Type:
 
 **systemctl status syncthing@root.service**
 
-Press enter
+_Press enter_
 
 
 Once you have confirmed your service is working you need to allow external access to Syncthings webUI.
