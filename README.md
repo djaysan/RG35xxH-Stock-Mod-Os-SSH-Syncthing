@@ -75,7 +75,10 @@ Reboot your device and in a browser go to address **http://192.168.8.186:8384**
 
 You may want to turn the lock screen timeout off in your device settings to avoid any interuption (at least for the initial sync)
 
-Enjoy!
+Enjoy! 
+**oh wait it's not over!** Now we need to configure Retroarch to set the saves and states to their respective core folders and move everything to the **Roms** Partition to make it easier to manage
+coming soon...
+
 
 All Credits where due!
 Special thanks:
