@@ -4,6 +4,7 @@ In order to use Syncthing, we will need to SSH into the device and instal it (it
 
 The RG35XXH stock OS has the packages needed for SSH. But Anbernic doesn't provide any built-in settings for users to enable it. 
 There is an App you can install onto the SD card that will allow you to enable SSH. 
+
 It can be downloaded from the authors Github page here: 
 https://github.com/exdial/anbernic-apps/tree/master
 
@@ -19,6 +20,7 @@ Once in you are going to need to copy and paste the commands from the following 
 https://www.linuxbabe.com/ubuntu/install-syncthing-ubuntu-desktop-server
 
 I will lay it down here for the sake of it - if you are not confirtable with the terminal app don't worry and just follow these 12 steps!
+
 **In this example my IP is 192.168.8.186** (yours will be different!) :
 
 1- First, type:
@@ -27,14 +29,18 @@ I will lay it down here for the sake of it - if you are not confirtable with the
 
 _Press enter_
 
+
 2- It will ask for your password which is **root**
 
 _Press enter_
+
+
 3- Then type:
 
 **apt-get install curl**
 
 _Press enter_
+
 
 4- Then type:
 
@@ -42,11 +48,13 @@ _Press enter_
 
 _Press enter_
 
+
 5- Then Type:
 
 **echo "deb https://apt.syncthing.net/ syncthing stable" | tee /etc/apt/sources.list.d/syncthing.list**
 
 _Press enter_
+
 
 6- Then Type:
 
@@ -54,11 +62,13 @@ _Press enter_
 
 _Press enter_
 
+
 8- Then Type:
 
 **apt-get update**
 
 _Press enter_
+
 
 9- Then Type:
 
@@ -66,17 +76,20 @@ _Press enter_
 
 _Press enter_
 
+
 10- Then Type:
 
 **systemctl enable syncthing@root.service**
 
 _Press enter_
 
+
 12- Then Type:
 
 **systemctl start syncthing@root.service**
 
 _Press enter_
+
 
 13- Then Type:
 
@@ -85,8 +98,10 @@ _Press enter_
 _Press enter_
 
 
+
 Once you have confirmed your service is working you need to allow external access to Syncthings webUI.
 By default it's locked to localhost. 
+
 To do this, go to your device and open the file manager App.
 Go to **/root/.local/state/syncthing** and edit **config.xml** and **config.xml.v0**. 
 In these files search for 127.0.0.1 and replace with 0.0.0.0 and save each file.
@@ -97,8 +112,11 @@ Reboot your device and in a browser go to address **http://192.168.8.186:8384**
 You may want to turn the lock screen timeout off in your device settings to avoid any interuption (at least for the initial sync)
 
 Enjoy! 
-**oh wait it's not over!** Now we need to configure Retroarch to set the saves and states to their respective core folders and move everything to the **Roms** Partition to make it easier to manage
-coming soon...
+
+**oh wait it's not over!** 
+Now we need to configure Retroarch to set the saves and states to their respective core folders and move everything to the **Roms** Partition to make it easier to manage
+
+this part is coming soon...
 
 
 All Credits where due!
