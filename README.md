@@ -58,33 +58,33 @@ _Press enter_
 
 6- Then Type:
 
-**7. apt-get install apt-transport-https**
+**apt-get install apt-transport-https**
 
 _Press enter_
 
 
-8- Then Type:
+7- Then Type:
 
 **apt-get update**
 
 _Press enter_
 
 
-9- Then Type:
+8- Then Type:
 
 **apt-get install syncthing**
 
 _Press enter_
 
 
-10- Then Type:
+9- Then Type:
 
 **systemctl enable syncthing@root.service**
 
 _Press enter_
 
 
-12- Then Type:
+10- Then Type:
 
 **systemctl start syncthing@root.service**
 
