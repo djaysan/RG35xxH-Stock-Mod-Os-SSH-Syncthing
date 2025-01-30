@@ -9,7 +9,9 @@ It can be downloaded from the authors Github page here:
 https://github.com/exdial/anbernic-apps/tree/master
 
 
-I've packaged it here as well for the sake of this tutorial.
+I've packaged it here as well for the sake of this tutorial. 
+**>>>(If you have the stock modified Os, you already have an ssh app so you can skip this step - however it's in chinese but we will just copy / paste stuff so it's not an issue!)
+**
 Just drag and drop the content of the zip file at the root of your SD and merge everything, find the APP in settings and select EnableSSH. 
 It takes a few seconds. 
 
@@ -40,7 +42,7 @@ _Press enter_
 **apt-get install curl**
 
 _Press enter_
-
+> you will be prompted to type "Y" - just type **Y** and press enter
 
 4- Then type:
 
