@@ -27,7 +27,7 @@ I will lay it down here for the sake of it - if you are not confirtable with the
 
 1- First, type:
 
-**ssh root@192.168.8.186**
+> **ssh root@192.168.8.186**
 
 _Press enter_
 
@@ -39,63 +39,63 @@ _Press enter_
 
 3- Then type:
 
-**apt-get install curl**
+> **apt-get install curl**
 
 _Press enter_
-> you will be prompted to type "Y" - just type **Y** and press enter
+you will be prompted to type "Y" - just type **Y** and press enter
 
 4- Then type:
 
-**curl -s https://syncthing.net/release-key.txt | apt-key add -**
+> **curl -s https://syncthing.net/release-key.txt | apt-key add -**
 
 _Press enter_
 
 
 5- Then Type:
 
-**echo "deb https://apt.syncthing.net/ syncthing stable" | tee /etc/apt/sources.list.d/syncthing.list**
+> **echo "deb https://apt.syncthing.net/ syncthing stable" | tee /etc/apt/sources.list.d/syncthing.list**
 
 _Press enter_
 
 
 6- Then Type:
 
-**apt-get install apt-transport-https**
+> **apt-get install apt-transport-https**
 
 _Press enter_
 
 
 7- Then Type:
 
-**apt-get update**
+> **apt-get update**
 
 _Press enter_
 
 
 8- Then Type:
 
-**apt-get install syncthing**
+> **apt-get install syncthing**
 
 _Press enter_
 
 
 9- Then Type:
 
-**systemctl enable syncthing@root.service**
+> **systemctl enable syncthing@root.service**
 
 _Press enter_
 
 
 10- Then Type:
 
-**systemctl start syncthing@root.service**
+> **systemctl start syncthing@root.service**
 
 _Press enter_
 
 
 13- Then Type:
 
-**systemctl status syncthing@root.service**
+> **systemctl status syncthing@root.service**
 
 _Press enter_
 
